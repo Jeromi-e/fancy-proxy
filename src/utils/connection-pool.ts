@@ -11,9 +11,9 @@ interface PoolOptions {
 }
 
 const DEFAULT_POOL_OPTIONS: PoolOptions = {
-  connections: 256,    // Max connections per pool
-  pipelining: 20,      // Max pipelined requests per connection
-  keepAliveTimeout: 240000, // 30 seconds
+  connections: 10,    // Max connections per pool
+  pipelining: 5,      // Max pipelined requests per connection
+  keepAliveTimeout: 30000, // 30 seconds
 };
 
 class ConnectionPoolManager {
